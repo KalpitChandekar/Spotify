@@ -45,17 +45,30 @@ nav ul li {
 .container {
   min-height: 75vh;
 }
- 
+
 .bottom {
-    position: sticky;
-    background-color: black;
-    height: 90px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: sticky;
+  background-color: black;
+  color: white;
+  height: 120px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #myProgressBar {
-    width: 80vw;
+  width: 80vw;
+}
+
+.icons {
+  margin-top: 15px;
+}
+
+.icons .ico {
+  cursor: pointer;
+  margin: 0 40px;
+  width: 40px;
+  height: 40px;
 }
