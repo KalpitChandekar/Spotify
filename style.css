@@ -30,6 +30,10 @@ nav ul li {
   padding: 0 12px;
 }
 
+.point {
+  cursor: pointer;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -52,7 +56,7 @@ nav ul li {
   width: 70%;
   border-radius: 12px;
   padding: 34px;
-  background-image: url('images/bg.jpg');
+  background-image: url("images/bg.jpg");
   background-size: cover;
 }
 
@@ -77,5 +81,37 @@ nav ul li {
   margin: 10px 40px 0 40px;
   width: 40px;
   height: 40px;
- 
+}
+
+.songList {
+  width: 50%;
+}
+
+.songList h1 {
+  font-size: 25px;
+}
+
+.songItem {
+  height: 40px;
+  display: flex;
+  background-color: white;
+  color: black;
+  width: 80%;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  width: 35px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp {
+  cursor: pointer;
 }
