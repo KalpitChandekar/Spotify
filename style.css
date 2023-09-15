@@ -57,7 +57,7 @@ nav ul li {
   width: 70%;
   border-radius: 12px;
   padding: 34px;
-  background-image: url("images/bg.jpg");
+  background-image: url("bg.jpg");
   background-size: cover;
 }
 
@@ -75,13 +75,13 @@ nav ul li {
 
 #myProgressBar {
   width: 80vw;
+  cursor: pointer;
 }
 
-.icons .ico {
+.icons i {
   cursor: pointer;
   margin: 10px 40px 0 40px;
-  width: 40px;
-  height: 40px;
+ font-size: 30px;
 }
 
 .songList {
