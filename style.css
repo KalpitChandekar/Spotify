@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;800&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&family=Ubuntu:wght@300;400&display=swap");
+/*  font-family: 'Ubuntu', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;800&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap");
+/*font-family: 'Varela Round', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-    background-color: antiquewhite;
+body {
+  background-color: antiquewhite;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
 }
