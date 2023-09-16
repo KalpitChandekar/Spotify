@@ -26,3 +26,13 @@ masterPlay.addEventListener("click", () => {
     gif.style.opacity = 0;
   }
 });
+
+audioElement.addEventListener("timeupdate", function () {
+  progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+  myProgressBar.value = progress;
+});
+
+myProgressBar.addEventListener("change", function () {
+  audioElement.currentTime =
+    (myProgressBar.value * audioElement.duration) / 100;
+});
