@@ -3,6 +3,7 @@ let audioElement = new Audio("songs/1.mp3");
 let masterPlay = document.getElementById("master-play");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
+let masterSongPlay = document.getElementById("masterSongPlay");
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 let songs = [
@@ -103,6 +104,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach(
       audioElement.src = `songs/${songIndex + 1}.mp3`;
       audioElement.currentTime = 0;
       audioElement.play();
+      masterSongPlay.innerText = songs[songIndex].songName;
       gif.style.opacity = 1;
       masterPlay.classList.remove("fa-circle-play");
       masterPlay.classList.add("fa-circle-pause");
@@ -119,6 +121,7 @@ document.getElementById("previous").addEventListener("click", () => {
   audioElement.src = `songs/${songIndex + 1}.mp3`;
   audioElement.currentTime = 0;
   audioElement.play();
+  masterSongPlay.innerText = songs[songIndex].songName;
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
 });
@@ -132,6 +135,7 @@ document.getElementById("next").addEventListener("click", () => {
   audioElement.src = `songs/${songIndex + 1}.mp3`;
   audioElement.currentTime = 0;
   audioElement.play();
+  masterSongPlay.innerText= songs[songIndex].songName;
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
 });
