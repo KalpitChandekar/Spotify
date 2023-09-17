@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -81,7 +80,7 @@ nav ul li {
 .icons i {
   cursor: pointer;
   margin: 10px 40px 0 40px;
- font-size: 30px;
+  font-size: 30px;
 }
 
 .songList {
@@ -120,11 +119,33 @@ nav ul li {
 .songInfo {
   position: absolute;
   left: 9.6vw;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .songInfo img {
   margin-right: 10px;
   opacity: 0;
-  transition:opacity 0.4s ease-in ;
+  transition: opacity 0.4s ease-in;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .songItem {
+    width: 100%;
+  }
+
+  .songList {
+    width: 100%;
+  }
+
+  .songList h1 {
+    font-size: 21px;
+  }
+
+  #masterSongPlay{
+    opacity: 0;
+  }
 }
